@@ -8,6 +8,7 @@ import boto.s3.connection as s3connection
 
 import ckan.logic as logic
 import ckan.lib.base as base
+import ckan.lib.helpers as h
 from ckan.common import c, response, request, _
 import ckan.model as model
 import ckan.lib.uploader as uploader
@@ -20,7 +21,7 @@ NotFound = logic.NotFound
 NotAuthorized = logic.NotAuthorized
 render = base.render
 abort = base.abort
-redirect = base.redirect
+redirect = h.redirect_to
 get_action = logic.get_action
 
 
